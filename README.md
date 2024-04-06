@@ -119,7 +119,7 @@ def surfacearea(request):
         context['h'] = h
         print('Area=',area)
     return render(request,'mathapp/math.html',context)
-    ```
+```
 urls.py
 
 ```
@@ -134,9 +134,9 @@ urlpatterns = [
 
 ```
 
-## SERVER SIDE PROCESSING:
-
+## SERVER SIDE PROCESSING :
 ![alt text](<Screenshot (20).png>)
+
 
 ## HOMEPAGE:
 
