@@ -1,5 +1,5 @@
 # Ex.05 Design a Website for Server Side Processing
-## Date:06-04-2024
+## Date:04-04-2024
 
 ## AIM:
 To design a website to find surface area of a Right Cylinder in server side.
@@ -75,7 +75,7 @@ padding-top: 20px;
 <body>
 <div class="edge">
 <div class="box">
- NITHISH S (212223220070 )
+NITHISH S (212223220070 )
 <h1>Surface Area of Right Cylinder</h1>
 <form method="POST">
 {% csrf_token %}
@@ -98,6 +98,7 @@ Area : <input type="text" name="area" value="{{area}}"></input>m<sup>2</sup><br/
 </html>
 ```
 views.py
+
 ```
 from django.shortcuts import render
 def surfacearea(request):
@@ -119,8 +120,9 @@ def surfacearea(request):
         print('Area=',area)
     return render(request,'mathapp/math.html',context)
     ```
-    urls.py
-    ```
+urls.py
+
+```
     from django.contrib import admin
 from django.urls import path
 from mathapp import views
@@ -129,14 +131,16 @@ urlpatterns = [
     path('surfaceareaofcylinder/',views.surfacearea,name="surfaceareaofcylinder"),
     path('',views.surfacearea,name="surfaceareaofcylinderroot")
 ]
-```
 
+```
 
 ## SERVER SIDE PROCESSING:
 
 ![alt text](<Screenshot (20).png>)
+
 ## HOMEPAGE:
 
 ![alt text](<Screenshot (19).png>)
+
 ## RESULT:
 The program for performing server side processing is completed successfully.
